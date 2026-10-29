@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="mail_notification_layout_plain"
+                  name="Mail: Dynamic Notifications Plain Layout">
+            <html t-att-lang="lang">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html charset=UTF-8"/>
+                </head>
+                <body style="font-family: Verdana, Arial, sans-serif; color: #454748;">
+                    <t t-call="mail.notification_preview"/>
+                    <t t-out="message.body"/>
+                </body>
+            </html>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <function model="dynamic.notification.channel" name="_sync_default_channel_names"/>
+    <function model="res.users" name="_init_dynamic_notification_channels"/>
+    <function model="res.users" name="_normalize_notification_type_without_notify_email_inbox"/>
+    <function model="res.users" name="_resync_all_notification_types_from_dynamic_channels"/>
+</odoo>

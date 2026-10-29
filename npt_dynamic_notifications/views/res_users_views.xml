@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_users_form_mail_dynamic_notification_channels" model="ir.ui.view">
+        <field name="name">res.users.form.mail.dynamic.notification.channels</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="mail.view_users_form_mail"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='notification_type']" position="replace">
+                <field name="dynamic_notification_channel_ids"
+                       string="Notification Channels"
+                       widget="many2many_checkboxes"
+                       options="{'no_create': True, 'no_create_edit': True}"
+                       invisible="share"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_users_form_simple_mail_dynamic_notification_channels" model="ir.ui.view">
+        <field name="name">res.users.preferences.form.mail.dynamic.notification.channels</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="mail.view_users_form_simple_modif_mail"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='notification_type']" position="replace">
+                <field name="dynamic_notification_channel_ids"
+                       string="Notification Channels"
+                       widget="many2many_checkboxes"
+                       options="{'no_create': True, 'no_create_edit': True}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
