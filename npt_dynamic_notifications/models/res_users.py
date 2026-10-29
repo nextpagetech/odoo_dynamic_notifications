@@ -22,7 +22,7 @@ class ResUsers(models.Model):
     @api.model
     def _default_dynamic_notification_channel_ids(self):
         email_channel = self.env.ref(
-            "dynamic_notifications.dynamic_notification_channel_email",
+            "npt_dynamic_notifications.dynamic_notification_channel_email",
             raise_if_not_found=False,
         )
         return [(6, 0, email_channel.ids)] if email_channel else []
