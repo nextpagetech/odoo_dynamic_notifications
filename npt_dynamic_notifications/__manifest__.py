@@ -4,10 +4,10 @@
     "version": "18.0.1.2.0",
     "category": "Tools",
     "license": "LGPL-3",
-    "author": 'Next Page Technologies Pvt Ltd',
-    "website": 'https://nextpagetechnologies.com',
+    "author": "Next Page Technologies Pvt Ltd",
+    "website": "https://nextpagetechnologies.com",
     "price": 10.0,
-    "currency": 'USD',
+    "currency": "USD",
     "depends": ["base", "mail", "stock", "web"],
     "data": [
         "security/ir.model.access.csv",
@@ -24,10 +24,9 @@
         ]
     },
     "images": [
-        'static/description/banner.png',
+        "static/description/banner.png"
     ],
-    "application": false,
-    "installable": true,
-    "auto_install": false
-    'installable': True,
+    "application": False,
+    "installable": True,
+    "auto_install": False,
 }
