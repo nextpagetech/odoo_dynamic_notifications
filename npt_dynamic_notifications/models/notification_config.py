@@ -309,7 +309,7 @@ class NotificationConfig(models.Model):
         )
         return {
             "meta": {
-                "module": "dynamic_notifications",
+                "module": "npt_dynamic_notifications",
                 "format_version": self._SETTINGS_EXPORT_VERSION,
                 "exported_at": fields.Datetime.to_string(fields.Datetime.now()),
                 "exported_by": self.env.user.login,
@@ -851,7 +851,7 @@ class NotificationConfig(models.Model):
                             subject=subject,
                             partner_ids=email_recipients.ids,
                             subtype_xmlid="mail.mt_comment",
-                            email_layout_xmlid="dynamic_notifications.mail_notification_layout_plain",
+                            email_layout_xmlid="npt_dynamic_notifications.mail_notification_layout_plain",
                         )
                     except Exception as exc:
                         _logger.warning(

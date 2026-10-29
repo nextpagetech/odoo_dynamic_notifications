@@ -1,11 +1,13 @@
 {
     "name": "Dynamic Notifications",
-    "summary": "Configurable event-based chatter and WhatsApp notifications",
-    "version": "1.2.0",
+    "summary": "Configurable event-based alerts for email, inbox and optional WhatsApp",
+    "version": "18.0.1.2.0",
     "category": "Tools",
     "license": "LGPL-3",
-    "author": "Custom",
-    # Requires stock for operation types; base/mail for messaging.
+    "author": 'Next Page Technologies Pvt Ltd',
+    "website": 'https://nextpagetechnologies.com',
+    "price": 10.0,
+    "currency": 'USD',
     "depends": ["base", "mail", "stock", "web"],
     "data": [
         "security/ir.model.access.csv",
@@ -14,13 +16,18 @@
         "views/mail_notification_layouts.xml",
         "views/notification_settings_import_wizard_views.xml",
         "views/notification_config_views.xml",
-        "views/res_users_views.xml",
+        "views/res_users_views.xml"
     ],
     "assets": {
         "web.assets_backend": [
-            "dynamic_notifications/static/src/js/notification_config_export_defaults.js",
-        ],
+            "npt_dynamic_notifications/static/src/js/notification_config_export_defaults.js"
+        ]
     },
-    "application": False,
-    "installable": True,
+    "images": [
+        'static/description/banner.png',
+    ],
+    "application": false,
+    "installable": true,
+    "auto_install": false
+    'installable': True,
 }
